@@ -1,20 +1,174 @@
-site_name: Informatica
+site_name: Python per il Calcolo Scientifico
 site_url: https://corsi.angelocardellicchio.it/python/
 
 nav:
   - Home: index.md
+  - 1. Il linguaggio Python:
+    - 1.1 Concetti introduttivi:
+      - 1.1.1 Introduzione al Python: material/01_python/01_intro/01_intro/lecture.md
+      - 1.1.2 Operatori aritmetici e logici: material/01_python/01_intro/02_operators/lecture.md
+      - 1.1.3 Stringhe: material/01_python/01_intro/03_strings/lecture.md
+      - 1.1.4 Liste: material/01_python/01_intro/04_lists/lecture.md
+      - Esercitazione 1.1: material/01_python/01_intro/exercises.md
+    - 1.2 Programmare in Python:
+      - 1.2.1 Sintassi fondamentale: material/01_python/02_syntax/01_syntax.md
+      - 1.2.2 Programmazione strutturata: material/01_python/02_syntax/02_structured.md
+      - 1.2.3 Funzioni: material/01_python/02_syntax/03_functions.md
+      - 1.2.4 Strutture dati: material/01_python/02_syntax/04_data_structures.md
+      - 1.2.5 Classi ed OOP: material/01_python/02_syntax/05_classes.md
+      - 1.2.6 Script, moduli e package: material/01_python/02_syntax/06_modules.md
+      - Esercitazione 1.2: material/01_python/02_syntax/exercises/exercises.md
+    - 1.3 Concetti avanzati:
+      - 1.3.1 Il modulo argparse: material/01_python/03_advanced/01_argparse.md
+      - 1.3.2 Iteratori: material/01_python/03_advanced/02_iterators.md
+      # - 1.3.3 Ambienti virtuali: material/01_python/03_advanced/03_venvs.md --> TODO
+  - 2. Librerie per il calcolo scientifico:
+    - 2.1 Jupyter Lab: material/02_libs/01_jupyter/lecture.md
+    - 2.2 NumPy:
+      - 2.2.1 Introduzione a NumPy: material/02_libs/02_numpy/01_intro.md
+      - 2.2.2 Gli Array: material/02_libs/02_numpy/02_array.md
+      - 2.2.3 Operazioni fondamentali sugli array: material/02_libs/02_numpy/03_fundamentals.md
+      - 2.2.4 Algebra in NumPy: material/02_libs/02_numpy/04_algebra.md
+      - 2.2.5 Polinomi in NumPy: material/02_libs/02_numpy/05_polynomials.md
+      - 2.2.6 Statistica in NumPy: material/02_libs/02_numpy/06_statistics.md
+      - Esercitazione 2.2:
+        - Tracce: material/02_libs/02_numpy/exercises/exercises.md
+        - Soluzioni: material/02_libs/02_numpy/exercises/solutions.md
+    - 2.3 Pandas:
+      - 2.3.1 Introduzione a Pandas: material/02_libs/03_pandas/01_intro.md
+      - 2.3.2 Le Series: material/02_libs/03_pandas/02_series.md
+      - 2.3.3 Input/Output in Pandas: material/02_libs/03_pandas/03_io.md
+      - 2.3.4 Manipolazione dei DataFrame: material/02_libs/03_pandas/04_functions.md
+    - 2.4 Visualizzazione dei dati in Python:
+      - 2.4.1 Matplotlib: material/02_libs/04_visualization/01_matplotlib.md
+      - 2.4.2 Seaborn: material/02_libs/04_visualization/02_seaborn.md
+      - Esercitazione 2.4: material/02_libs/04_visualization/exercises/exercises.md
+  - 3. Machine learning:
+    - 3.1 Concetti di machine learning:
+      - 3.1.1 Introduzione al machine learning: material/03_ml/01_intro/01_intro.md
+      - 3.1.2 Definizione del problema: material/03_ml/01_intro/02_framing.md
+      - 3.1.3 Preparazione dei dati: material/03_ml/01_intro/03_data_prep.md
+      - 3.1.4 Task, predizione ed esperienza: material/03_ml/01_intro/04_base.md
+      - 3.1.5 Generalizzazione: material/03_ml/01_intro/05_generalization.md
+      - 3.1.6 Iperparametri: material/03_ml/01_intro/06_hyperparameters.md
+      - 3.1.7 Regolarizzazione: material/03_ml/01_intro/07_regularization.md
+    - 3.2 Classificazione e regressione:
+      - 3.2.1 Regressione lineare: material/03_ml/02_classification_regression/02_lin_reg/lecture.md
+      - 3.2.2 Regressione logistica: material/03_ml/02_classification_regression/03_log_reg/lecture.md
+    - 3.3 Alberi:
+      - 3.4.1 Alberi decisionali: material/03_ml/04_trees/01_decision_trees.md
+      - 3.4.2 Foreste decisionali: material/03_ml/04_trees/02_decision_forests.md
+      - 3.4.3 Gradient boosted trees: material/03_ml/04_trees/03_gbt.md
+    - 3.4 Clustering: material/03_ml/05_clustering/lecture.md
+    - 3.5 Metriche:
+      - 3.5.1 Metriche di classificazione: material/03_ml/06_metrics/01_classification.md
+      - 3.5.2 Metriche di regressione: material/03_ml/06_metrics/02_regression.md
+      - 3.5.3 Metriche di clustering: material/03_ml/06_metrics/03_clustering.md
+    - 3.6 Problemi aperti: material/03_ml/07_challenges/01_curse.md
+  - 4 Scikit Learn:
+    - 4.1 Introduzione a Scikit Learn: material/04_sklearn/01_intro/lecture.md
+    - 4.2 Modelli lineari:
+      - 4.2.1 Metriche di regressione: material/04_sklearn/02_linear_models/01_metrics.md
+      - 4.2.2 Regressione lineare e robusta: material/04_sklearn/02_linear_models/02_regression.md
+      - 4.2.3 Regressione logistica: material/04_sklearn/02_linear_models/03_logistic.md
+      - Esercitazione 4.2: material/04_sklearn/02_linear_models/exercises.md
+    - 4.3 Stimatori:
+      - 4.3.1 Metriche di classificazione: material/04_sklearn/03_estimator/01_metrics.md
+      - 4.3.2 Classificatori e regressori: material/04_sklearn/03_estimator/02_clf_rgr.md
+      - Esercitazione 4.3: material/04_sklearn/03_estimator/exercises.md
+    - 4.4 Clustering:
+      - 4.4.1 Metriche di clustering: material/04_sklearn/04_clustering/01_metrics.md
+      - 4.4.2 Algoritmi di clustering: material/04_sklearn/04_clustering/02_clustering.md
+      - Esercitazione 4.4: material/04_sklearn/04_clustering/exercises.md
+    - 4.5 Concetti avanzati:
+      - 4.5.1 Pipeline: material/04_sklearn/05_advanced/01_pipeline.md
+      - 4.5.2 Preprocessing su dataframe: material/04_sklearn/05_advanced/02_col_tran.md
+      - 4.5.3 Cross-validazione:
+        - 4.5.3.1 Introduzione: material/04_sklearn/05_advanced/03_cross_val/01_intro.md
+        - 4.5.3.2 Strategie di cross-validazione: material/04_sklearn/05_advanced/03_cross_val/02_strategies.md
+        - 4.5.3.3 Permutation score: material/04_sklearn/05_advanced/03_cross_val/03_permutations.md
+      - 4.5.4 Feature selection: material/04_sklearn/05_advanced/04_feat_sel.md
+      - 4.5.5 Ottimizzazione degli iperparametri: material/04_sklearn/05_advanced/05_hyperpars.md
+      - Esercitazione 4.5: material/04_sklearn/05_advanced/exercises.md
+  - 5. Deep learning:
+    - 5.1 Introduzione alle reti neurali:
+      - 5.1.1 Introduzione: material/04_dl/01_nn/01_intro/lecture.md
+      - 5.1.2 Addestramento delle reti neurali:
+        - 5.1.2.1 Principi di addestrammento di una rete neurale: material/04_dl/01_nn/02_training/01_intro/lecture.md
+        - 5.1.2.2 La loss function: material/04_dl/01_nn/02_training/02_loss/lecture.md
+        - 5.1.2.3 Gli ottimizzatori: material/04_dl/01_nn/02_training/03_optimizers/lecture.md
+    - 5.2 Architetture di reti neurali:
+      - 5.2.1 Autoencoder:
+        - 5.2.1.1 Introduzione agli autoencoder: material/04_dl/02_architectures/01_autoencoder/01_intro.md
+        - 5.2.1.2 Undercomplete autoencoder: material/04_dl/02_architectures/01_autoencoder/02_undercomplete.md
+        - 5.2.1.3 Sparse autoencoder: material/04_dl/02_architectures/01_autoencoder/03_sparse.md
+        - 5.2.1.4 Denoising autoencoder: material/04_dl/02_architectures/01_autoencoder/04_denoising.md
+        - 5.2.1.5 Variational autoencoder: material/04_dl/02_architectures/01_autoencoder/05_variational.md
+      - 5.2.2 Recurrent Neural Networks: 
+        - 5.2.2.1 Introduzione alle RNN: material/04_dl/02_architectures/02_rnn/01_intro/lecture.md
+        - 5.2.2.2 Le reti LSTM: material/04_dl/02_architectures/02_rnn/02_lstm/lecture.md
+        - 5.2.2.3 Le reti GRU: material/04_dl/02_architectures/02_rnn/03_gru/lecture.md
+      - 5.2.3 Convolutional Neural Networks: 
+        - 5.2.3.1 Introduzione alle CNN: material/04_dl/02_architectures/03_cnn/01_intro/lecture.md
+        - 5.2.3.2 Representation learning nelle CNN: material/04_dl/02_architectures/03_cnn/02_representation/lecture.md
+        - 5.2.3.3 Layer fondamentali nelle CNN: material/04_dl/02_architectures/03_cnn/03_layers/lecture.md
+        - 5.2.3.4 Il modulo Inception: material/04_dl/02_architectures/03_cnn/04_inception/lecture.md
+        - 5.2.3.5 Il modulo Residual: material/04_dl/02_architectures/03_cnn/05_residual/lecture.md
+      - 5.2.4 Trasformer:
+        - 5.2.4.1 Introduzione ai trasformer: material/04_dl/02_architectures/04_trasformer/01_intro/lecture.md
+        - 5.2.4.2 Il meccanismo di self-attention: material/04_dl/02_architectures/04_trasformer/02_self_attention/lecture.md
+        - 5.2.4.3 I Vision Transformer: material/04_dl/02_architectures/04_transformer/03_vit/lecture.md
+    - 5.3 L'Attention:
+      - 5.3.1 Il concetto di Attention: material/04_dl/03_attention/01_intro/lecture.md
+    - 5.4 Applicazioni:
+      - 5.4.1 Le reti generative: material/04_dl/04_applications/01_gans/lecture.md
+      - 5.4.2 L'object detection:
+        - 5.4.2.1 Introduzione: material/04_dl/04_applications/02_obj_det/01_intro/lecture.md
+        - 5.4.2.2 R-CNN: material/04_dl/04_applications/02_obj_det/02_two_stage/lecture.md
+        - 5.4.2.3 YOLO: material/04_dl/04_applications/02_obj_det/03_one_stage/lecture.md
+        - 5.4.2.4 DETR e RT-DETR: material/04_dl/04_applications/02_obj_det/04_detr/lecture.md
+      - 5.4.3 L'Agentic AI:
+        - 5.4.3.1 Introduzione all'Agentic AI: material/04_dl/04_applications/03_agentic/01_intro/lecture.md
+    - 5.5 Interpretabilità: material/04_dl/05_xai/lecture.md
+    - 6 TensorFlow:
+      - 6.1 - Basi di TensorFlow:
+        - 6.1.1 - Introduzione a TensorFlow: material/04_dl/06_tflow/01_intro/01_intro.md
+        - 6.1.2 - Dataset: material/04_dl/06_tflow/01_intro/02_data.md
+        - 6.1.3 - Callbacks: material/04_dl/06_tflow/01_intro/03_callbacks.md
+        - 6.1.4 - Transfer learning e fine tuning: material/04_dl/06_tflow/01_intro/04_tl_ft.md
+        - 6.1.5 - Dropout e regolarizzazione: material/04_dl/06_tflow/01_intro/05_dropout.md
+        - 6.1.6 - Layer e Model: material/04_dl/06_tflow/01_intro/06_model_api.md
+  - Appendici:
+    - A - Setup di Python e Visual Studio Code: material/appendix/01_python_vs_code/lecture.md
+    - B - Setup di TensorFlow: material/appendix/02_setup_tflow/lecture.md
+    - C - Le librerie in Python: material/appendix/03_libraries/lecture.md
+    - D - Ambito di una variabile: material/appendix/04_scope/lecture.md
+    - E - Programmazione orientata agli oggetti: material/appendix/05_oop/lecture.md
+    - F - Tips: material/appendix/06_tips/lecture.md
+  - Ringraziamenti: contributors.md
 
 theme:
   name: material
   language: it
+  favicon: assets/images/favicon.png
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Rainbow in the dark
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Fear of the dark?
 
 markdown_extensions:
-  - admonition # notes make pret4ty
+  - admonition # notes make pretty
   - attr_list
   - footnotes
   - meta # page-specific context
   - toc:
       permalink: true # inserts an anchor
+      toc_depth: 3
   - sane_lists # better ul and ol
   - nl2br # newline hard break
   - pymdownx.arithmatex:
@@ -27,20 +181,40 @@ markdown_extensions:
       emoji_index: !!python/name:pymdownx.emoji.twemoji
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.highlight: # better code, instead of CodeHilite           <--------
-      anchor_linenums: false
+      anchor_linenums: true
   - pymdownx.inlinehilite # like codehilite but inline
   - pymdownx.magiclink # auto links
   - pymdownx.mark # highlight text
   - pymdownx.smartsymbols # special symbols
-  - pymdownx.superfences: # nest code blocks under other blocks   <-------
+  - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist: # better tasks lists
       custom_checkbox: true
-  - pymdownx.tabbed: # auto tabs
+  - pymdownx.tabbed:
       alternate_style: true # auto tabs
   - pymdownx.tilde # strike through cross out text
-  - tables
   - md_in_html
+
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/anhelus
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:angelo.cardellicchio@stiima.cnr.it
+
+extra_javascript:
+  - js/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: Copyright &copy; Angelo Cardellicchio - MIT License

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="python/assets/stylesheets/main.css">
     <link rel="stylesheet" href="python/assets/stylesheets/palette.css">
 
-    <!-- Stili personalizzati -->
+    <!-- Stili personalizzati per la landing page -->
     <style>
         body {
             display: flex;
@@ -19,7 +19,6 @@
         .md-header {
             position: initial;
         }
-        /* SICUREZZA: Forza la dimensione del logo SVG se il JS non dovesse caricarlo correttamente */
         .md-header__button.md-logo svg {
             width: 1.2rem;
             height: 1.2rem;
@@ -39,6 +38,7 @@
             width: 100%;
         }
         .md-card {
+            background-color: var(--md-code-bg-color); /* Colore di sfondo coerente col tema */
             border: 1px solid var(--md-default-fg-color--lightest);
             border-radius: 4px;
             padding: 1.5rem;
@@ -46,7 +46,7 @@
             transition: all 0.3s ease;
         }
         .md-card:hover {
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             transform: translateY(-5px);
         }
         .md-card h2 {
@@ -59,13 +59,19 @@
         }
     </style>
 </head>
-<!-- Aggiunta la classe 'md-color' per aiutare il JS della palette -->
-<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+<!--
+  =====================================================================
+  MODIFICA CHIAVE: Imposta il tema di default su "slate" (scuro)
+  e i colori su "blue" per corrispondere al sito di Python.
+  =====================================================================
+-->
+<body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue">
     <!-- Header di Material -->
     <header class="md-header" data-md-component="header">
         <nav class="md-header__inner md-grid" aria-label="Header">
             <a href="/" title="Home" class="md-header__button md-logo" aria-label="Home" data-md-component="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                <!-- Icona "School" coerente con il sito Python -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3m0 8.47L4.42 8 12 4.47 19.58 8 12 11.47z"/></svg>
             </a>
             <div class="md-header__title" data-md-component="header-title">
                 <div class="md-header__ellipsis">
@@ -84,21 +90,18 @@
     <div class="container">
         <div class="grid">
             
-            <!-- Card 1: Corso di Python -->
             <div class="md-card">
                 <h2>Python per il Calcolo Scientifico</h2>
                 <p>Un corso completo che parte dalle basi di Python per arrivare alle librerie fondamentali come NumPy, Pandas e Matplotlib.</p>
                 <a href="/python/" class="md-button md-button--primary">Inizia a imparare</a>
             </div>
 
-            <!-- Card 2: Corso di Informatica -->
             <div class="md-card">
                 <h2>Fondamenti di Informatica</h2>
                 <p>Le basi teoriche dell'informatica: algoritmi, strutture dati, complessità computazionale e paradigmi di programmazione.</p>
                 <a href="/informatica/" class="md-button md-button--primary">Esplora il corso</a>
             </div>
 
-            <!-- Card 3: Corso di Ingegneria del Software -->
             <div class="md-card">
                 <h2>Ingegneria del Software</h2>
                 <p>Impara i processi, i metodi e gli strumenti per progettare, sviluppare e mantenere sistemi software complessi e di alta qualità.</p>
@@ -108,12 +111,7 @@
         </div>
     </div>
 
-    <!-- 
-      =====================================================================
-      AGGIUNTA FONDAMENTALE: Inclusione dei file JavaScript di Material
-      Questi script risolvono i problemi di visualizzazione e di palette.
-      =====================================================================
-    -->
+    <!-- JavaScript di Material, fondamentale per il corretto funzionamento -->
     <script src="python/assets/javascripts/bundle.js"></script>
     <script src="python/assets/javascripts/config.js"></script>
 </body>
