@@ -2,4 +2,4 @@ site_name: Informatica
 site_url: https://corsi.angelocardellicchio.it/python/
 
 nav:
-  Home: index.md
+  - Home: index.md
