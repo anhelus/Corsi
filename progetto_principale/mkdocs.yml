@@ -9,6 +9,7 @@ theme:
   name: material
   language: it
   logo: material/school 
+  custom_dir: overrides
   
   # La sezione 'palette' e 'features' devono essere indentate sotto 'theme'
   palette:
