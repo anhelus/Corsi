@@ -1,5 +1,4 @@
 ---
-template: home.html
 hide:
   - navigation
   - toc
@@ -25,7 +24,7 @@ Benvenuti nel mio hub di risorse didattiche. Qui troverete dispense e materiali 
 
     Le basi teoriche dell'informatica: algoritmi, strutture dati, complessità computazionale e i principali paradigmi di programmazione.
 
-    [Entra nel corso](/informatica/){ .md-button }
+    [Entra nel corso](/informatica/){ .md-button .md-button--primary }
 
 -   __Ingegneria del Software__
 
@@ -33,6 +32,6 @@ Benvenuti nel mio hub di risorse didattiche. Qui troverete dispense e materiali 
 
     Impara i processi, i metodi e gli strumenti per progettare, sviluppare e mantenere sistemi software complessi e di alta qualità.
 
-    [Entra nel corso](/ing-software/){ .md-button }
+    [Entra nel corso](/ing-software/){ .md-button .md-button--primary }
 
 </div>
