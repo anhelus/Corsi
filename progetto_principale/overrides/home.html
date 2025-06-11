@@ -1,28 +1,31 @@
-{# Questo file estende il tema base di Material, aggiungendo la nostra logica #}
 {% extends "main.html" %}
 
-{# Sovrascriviamo il blocco del contenuto #}
 {% block content %}
   
-  {# Prima di tutto, includiamo il contenuto scritto nel file index.md #}
   {{ super() }}
 
-  {# Ora, aggiungiamo il nostro layout a card personalizzato #}
+  <style>
+    /* MODIFICA: Aggiungiamo un'ombreggiatura di base e una più pronunciata al passaggio del mouse */
+    .md-card {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombra leggera di default */
+      transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .md-card:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Ombra più forte su hover */
+      transform: translateY(-5px);
+    }
+  </style>
+
   <div class="grid cards" markdown>
-    
     <ul>
-      
       <li>
         <a href="/python/" class="md-card">
           <div class="md-card__title">
-            <div class="md-card__icon">
-              <span class="twemoji">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3m0 8.47L4.42 8 12 4.47 19.58 8 12 11.47z"/></svg>
-              </span>
-            </div>
-            <div class="md-card__text">
+            
+            <!-- MODIFICA: Il titolo ora è un tag <h3> per una dimensione corretta -->
+            <h3 class="md-card__text" style="font-weight: 500;">
               Python per il Calcolo Scientifico
-            </div>
+            </h3>
           </div>
           <div class="md-card__content">
             Un corso completo dalle basi di Python alle librerie fondamentali come NumPy, Pandas e Matplotlib.
@@ -33,14 +36,11 @@
       <li>
         <a href="/informatica/" class="md-card">
           <div class="md-card__title">
-            <div class="md-card__icon">
-              <span class="twemoji">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3m0 8.47L4.42 8 12 4.47 19.58 8 12 11.47z"/></svg>
-              </span>
-            </div>
-            <div class="md-card__text">
+            
+            <!-- MODIFICA: Il titolo ora è un tag <h3> per una dimensione corretta -->
+            <h3 class="md-card__text" style="font-weight: 500;">
               Fondamenti di Informatica
-            </div>
+            </h3>
           </div>
           <div class="md-card__content">
             Le basi teoriche dell'informatica: algoritmi, strutture dati, complessità e paradigmi di programmazione.
@@ -51,14 +51,11 @@
       <li>
         <a href="/ing-software/" class="md-card">
           <div class="md-card__title">
-            <div class="md-card__icon">
-              <span class="twemoji">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3m0 8.47L4.42 8 12 4.47 19.58 8 12 11.47z"/></svg>
-              </span>
-            </div>
-            <div class="md-card__text">
+            
+            <!-- MODIFICA: Il titolo ora è un tag <h3> per una dimensione corretta -->
+            <h3 class="md-card__text" style="font-weight: 500;">
               Ingegneria del Software
-            </div>
+            </h3>
           </div>
           <div class="md-card__content">
             Impara i processi, i metodi e gli strumenti per progettare, sviluppare e mantenere sistemi software di alta qualità.
