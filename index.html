@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corsi di Informatica di Angelo Cardellicchio</title>
     
-    <!--
-      TRUCCO: Usiamo i file CSS di Material già generati dal sito di Python
-      per dare a questa pagina lo stesso identico look & feel.
-    -->
+    <!-- Link ai fogli di stile di Material (dal sito Python) -->
     <link rel="stylesheet" href="python/assets/stylesheets/main.css">
     <link rel="stylesheet" href="python/assets/stylesheets/palette.css">
 
-    <!-- Stili personalizzati per centrare il contenuto e migliorare l'aspetto -->
+    <!-- Stili personalizzati -->
     <style>
         body {
             display: flex;
@@ -20,7 +17,12 @@
             min-height: 100vh;
         }
         .md-header {
-            position: initial; /* Rimuove l'header "sticky" solo per questa pagina */
+            position: initial;
+        }
+        /* SICUREZZA: Forza la dimensione del logo SVG se il JS non dovesse caricarlo correttamente */
+        .md-header__button.md-logo svg {
+            width: 1.2rem;
+            height: 1.2rem;
         }
         .container {
             flex-grow: 1;
@@ -37,11 +39,11 @@
             width: 100%;
         }
         .md-card {
-            border: 1px solid #e0e0e0;
+            border: 1px solid var(--md-default-fg-color--lightest);
             border-radius: 4px;
             padding: 1.5rem;
             text-align: center;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
         }
         .md-card:hover {
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -57,7 +59,8 @@
         }
     </style>
 </head>
-<body dir="ltr">
+<!-- Aggiunta la classe 'md-color' per aiutare il JS della palette -->
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
     <!-- Header di Material -->
     <header class="md-header" data-md-component="header">
         <nav class="md-header__inner md-grid" aria-label="Header">
@@ -104,5 +107,14 @@
 
         </div>
     </div>
+
+    <!-- 
+      =====================================================================
+      AGGIUNTA FONDAMENTALE: Inclusione dei file JavaScript di Material
+      Questi script risolvono i problemi di visualizzazione e di palette.
+      =====================================================================
+    -->
+    <script src="python/assets/javascripts/bundle.js"></script>
+    <script src="python/assets/javascripts/config.js"></script>
 </body>
 </html>
