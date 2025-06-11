@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corsi di Informatica di Angelo Cardellicchio</title>
+    
+    <!--
+      TRUCCO: Usiamo i file CSS di Material già generati dal sito di Python
+      per dare a questa pagina lo stesso identico look & feel.
+    -->
+    <link rel="stylesheet" href="python/assets/stylesheets/main.css">
+    <link rel="stylesheet" href="python/assets/stylesheets/palette.css">
+
+    <!-- Stili personalizzati per centrare il contenuto e migliorare l'aspetto -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .md-header {
+            position: initial; /* Rimuove l'header "sticky" solo per questa pagina */
+        }
+        .container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .md-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .md-card:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+        .md-card h2 {
+            margin-top: 0;
+        }
+        .md-card a.md-button {
+            margin-top: 1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body dir="ltr">
+    <!-- Header di Material -->
+    <header class="md-header" data-md-component="header">
+        <nav class="md-header__inner md-grid" aria-label="Header">
+            <a href="/" title="Home" class="md-header__button md-logo" aria-label="Home" data-md-component="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+            </a>
+            <div class="md-header__title" data-md-component="header-title">
+                <div class="md-header__ellipsis">
+                    <div class="md-header__topic">
+                        <span class="md-ellipsis">Angelo Cardellicchio</span>
+                    </div>
+                    <div class="md-header__topic" data-md-component="header-topic">
+                        <span class="md-ellipsis">Corsi di Informatica</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenuto principale con le card dei corsi -->
+    <div class="container">
+        <div class="grid">
+            
+            <!-- Card 1: Corso di Python -->
+            <div class="md-card">
+                <h2>Python per il Calcolo Scientifico</h2>
+                <p>Un corso completo che parte dalle basi di Python per arrivare alle librerie fondamentali come NumPy, Pandas e Matplotlib.</p>
+                <a href="/python/" class="md-button md-button--primary">Inizia a imparare</a>
+            </div>
+
+            <!-- Card 2: Corso di Informatica -->
+            <div class="md-card">
+                <h2>Fondamenti di Informatica</h2>
+                <p>Le basi teoriche dell'informatica: algoritmi, strutture dati, complessità computazionale e paradigmi di programmazione.</p>
+                <a href="/informatica/" class="md-button md-button--primary">Esplora il corso</a>
+            </div>
+
+            <!-- Card 3: Corso di Ingegneria del Software -->
+            <div class="md-card">
+                <h2>Ingegneria del Software</h2>
+                <p>Impara i processi, i metodi e gli strumenti per progettare, sviluppare e mantenere sistemi software complessi e di alta qualità.</p>
+                <a href="/ing-software/" class="md-button md-button--primary">Scopri di più</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

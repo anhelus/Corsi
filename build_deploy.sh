@@ -40,8 +40,7 @@ mv progetto_ing_software/site final_site/ing-software
 echo "File del sito Ing. Software spostati in /ing-software."
 
 # --- Creazione pagina indice ---
-echo "Passo 6: Creazione della pagina indice principale..."
-echo '<!DOCTYPE html><html><head><title>Corsi</title></head><body><h1>I miei corsi</h1><ul><li><a href="/python/">Python per il Calcolo Scientifico</a></li><li><a href="/informatica/">Fondamenti di Informatica</a></li><li><a href="/ing-software/">Ingegneria del Software</a></li></ul></body></html>' > final_site/index.html
-echo "Pagina indice creata."
+echo "Passo 6: Copia della pagina indice principale..."
+cp index.html final_site/index.html
 
 echo "===== BUILD COMPLETATO CON SUCCESSO! ====="
