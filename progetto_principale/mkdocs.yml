@@ -1,33 +1,32 @@
 # Configurazione per la sola landing page (progetto_principale/mkdocs.yml)
+# VERSIONE CORRETTA
 
-# URL DEL SITO PRINCIPALE, SENZA SOTTOCARTELLE!
 site_url: https://corsi.angelocardellicchio.it/
-
 site_name: Angelo Cardellicchio | Corsi di Informatica
 site_author: Angelo Cardellicchio
 
 theme:
   name: material
   language: it
-  logo: material/school # O il percorso al tuo logo, es: assets/logo.svg
+  logo: material/school 
   
-  # Configurazione per avere il tema scuro (slate) di default
+  # La sezione 'palette' e 'features' devono essere indentate sotto 'theme'
   palette:
+    # Modalità chiara
     - scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    # Modalità scura
     - scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-    primary: blue
-    accent: blue
   
-  # Funzionalità per una landing page pulita
   features:
     - navigation.top
 
-# Rimuove la navigazione laterale, inutile su una pagina singola
+# Questa sezione definisce la struttura di navigazione del sito.
+# In questo caso, abbiamo solo una pagina.
 nav:
   - Home: index.md
