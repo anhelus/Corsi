@@ -1,4 +1,4 @@
-site_name: Python per il Calcolo Scientifico
+site_name: Informatica
 site_url: https://corsi.angelocardellicchio.it/informatica/
 
 nav:
@@ -44,3 +44,20 @@ markdown_extensions:
   - pymdownx.tilde # strike through cross out text
   - tables
   - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/anhelus
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:a.cardellicchio@gmail.com
+
+extra_javascript:
+  - js/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: Copyright &copy; Angelo Cardellicchio - MIT License
